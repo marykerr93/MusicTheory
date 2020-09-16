@@ -1,11 +1,11 @@
-$blue-green: #2a9d8f;
+$dark-orange: #e76f51;
 
 html {
     scroll-behavior: smooth;
 }
 
-footer a {
-    color: $blue-green;
+a {
+    color: $dark-orange;
 }
 
 .wide-section {
@@ -20,4 +20,9 @@ footer a {
 
 .image-sml {
     max-width: 400px;
+}
+
+.bg-img {
+    background-image: url("https://images.unsplash.com/photo-1538402074774-8e624f3f7e5d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=975&q=80");
+    opacity: .5;
 }
