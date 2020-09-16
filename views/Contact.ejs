@@ -1,0 +1,53 @@
+<%- include("partials/header") %>
+<section class="container">
+  <div class="box">
+    <h1 class="title">Contact Form</h1>
+
+    <div class="field">
+        <label class="label">Name</label>
+        <div class="control">
+          <input class="input" type="text" placeholder="What's your name?">
+        </div>
+      </div>
+      
+      <div class="field">
+        <label class="label">Email</label>
+        <div class="control">
+          <input class="input" type="email" placeholder="What's your email?">
+        </div>
+      </div>
+      
+      <div class="field">
+        <label class="label">Subject</label>
+        <div class="control">
+          <div class="select">
+            <select>
+              <option>Thank you!</option>
+              <option>I want to compliment you!</option>
+              <option>Something is wrong!</option>
+              <option>Suggestion related to Music Theory</option>
+              <option>Suggestion related to the website functionality</option>
+              <option>Suggestion related to the website looks</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      
+      <div class="field">
+        <label class="label">Message</label>
+        <div class="control">
+          <textarea class="textarea" placeholder="Write your message here!"></textarea>
+        </div>
+      </div>
+      
+      <div class="field is-grouped">
+        <div class="control">
+          <button class="button is-link">Submit</button>
+        </div>
+        <div class="control">
+          <button class="button is-link is-light">Cancel</button>
+        </div>
+      </div>
+  </div>
+</section>
+<%- include("partials/footer") %>

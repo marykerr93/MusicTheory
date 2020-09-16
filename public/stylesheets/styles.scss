@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+
+// Import a Google Font
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Source+Serif+Pro&display=swap');
+
+// Set your brand colors
+$blue-darkest: #001b2e;
+$blue: #264653;
+$blue-green: #2a9d8f;
+$green: #8ab17d;
+$yellow: #e9c46a;
+$white: #ffefd3;
+$light-orange: #f4a261;
+$orange: #ee8959;
+$dark-orange: #e76f51;
+$family-sans-serif: 'Roboto Slab', serif;
+$family-monospace: 'Source Serif Pro', serif;
+
+// Update Bulma's global variables
+$primary: $blue-darkest;
+$info: $blue-green;
+$success: $yellow;
+$warning: $light-orange;
+$danger: $orange;
+$dark: $dark-orange;
+$light: $white;
+$widescreen-enabled: false;
+$fullhd-enabled: false;
+$family-primary: $family-sans-serif;
+$family-secondary: $family-monospace;
+$navbar-background-color: $blue-darkest;
+$navbar-item-color: $white;
+$navbar-item-hover-color: $white;
+$navbar-item-hover-background-color: $blue;
+$navbar-dropdown-background-color: $blue-darkest;
+// $navbar-dropdown-border-top: $blue-darkest;
+$navbar-dropdown-item-hover-color: $white;
+$navbar-dropdown-item-hover-background-color: $blue;
+$box-color: $blue-darkest;
+$footer-background-color: $blue-darkest;
+$footer-color: $white;
+$title-color: $blue-green;
+$subtitle-color: $dark-orange;
+
+// Update some of Bulma's component variables
+
+
+// Import only what you need from Bulma
+@import "../../node_modules/bulma/bulma.sass";
+
+@import "../../node_modules/bulma/sass/utilities/_all.sass";
+@import "../../node_modules/bulma/sass/base/_all.sass";
+@import "../../node_modules/bulma/sass/elements/button.sass";
+@import "../../node_modules/bulma/sass/elements/container.sass";
+@import "../../node_modules/bulma/sass/elements/title.sass";
+@import "../../node_modules/bulma/sass/components/navbar.sass";
+@import "../../node_modules/bulma/sass/layout/hero.sass";
+@import "../../node_modules/bulma/sass/layout/section.sass";
+// @import "../../node_modules/bulma-timeline/src/sass/index.sass";
+@import "./main.scss";

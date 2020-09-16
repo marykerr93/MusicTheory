@@ -1,0 +1,239 @@
+<%- include("partials/header") %>
+<section class="container my-5">
+    <div class="tile is-ancestor">
+        <div class="tile is-12">
+            <div class="tile is-parent">
+                <article class="is-child notification is-info">
+                    <div class="content has-text-centered">
+                        <h1 class="title">Lesson 3: Key Signatures and the Circle of Fifths</h1>
+                        <p>This lesson begins with some review from Lesson 2, and includes a cheat sheet with the intervals we will be uisng in this lesson. This won't be included in future lessons, so be sure to keep reviewing your intervals!</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+    <div class="tile is-ancestor">
+        <div class="tile is-vertical is-6">
+            <div class="tile">
+                <div class="tile is-parent is-vertical">
+                    <article class="tile is-child notification is-primary">
+                        <div class="block">
+                            <h2 class="title">Review</h2>
+                            <p>The solfege scale:</p>
+                            <br>
+                            <p class="subtitle has-text-centered">Do Re Mi Fa So La Ti Do</p>
+                            <p>The chromatic scale:</p>
+                            <br>
+                            <p class="subtitle has-text-centered">↑ Do Di Re Ri Mi Fa Fi So Si La Li Ti Do ↑</p>
+                            <p class="subtitle has-text-centered">↓ Do Ti Teh La Leh So Seh Fa Mi Meh Re Ra Do ↓</p>    
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <div class="tile is-parent">
+            <article class="tile is-child notification is-danger">
+                <div class="block">
+                    <h2 class="title">Major Scale Intervals:</h2>
+                    <figure class="image my-5">
+                        <img src="./Images/major_scale.png" alt="">
+                    </figure>
+                    <p class="subtitle">Intervals used in this lesson:</p>
+                    <p class="is-size-6 has-text-centered">
+                        <ul class="has-text-centered">
+                            <li>Minor Second (m2) - 1 half step</li>
+                            <li>Major Second (M2) - 2 half steps</li>
+                            <li>Perfect Fourth (P4) - 5 half steps</li>
+                            <li>Perfect Fifth (P5) - 7 half steps</li>
+                        </ul>
+                    </p>
+                </div>
+            </article>
+        </div>
+    </div>
+    <div class="tile is-ancestor">
+        <div class="tile is-12 is-parent">
+            <article class="tile is-child notification is-success">
+                <div class="content">
+                    <h3 class="title">Key Signatures & the Circle of Fifths</h3>
+                    <div class="content">
+                        <p class="subtitle">Each time you change the starting note of Do, the notes used in the key (in the scale) change. Below is a chart of all of the Major key signatures:
+                            <ul>
+                                <li>The first column contains the key signature's name and how many sharps or flats are in the key signature.</li>
+                                <li>The second column lists the notes that are being sharpened or flattened in the key.</li>
+                                <li>The third column contains the notation of the key signature on the grand staff.</li>
+                                <li>The fourth column contains a visual of one octave of the key on the piano.</li>
+                                <li>The fifth and final column contains the relative minor key. Relative minor keys are always a minor 3rd below the Root note (or Do) of the major key signature. The relative minor has the same notatino on the key signature and grand staff, as well as the same altered notes when using natural minor.</li>
+                            </ul>
+                        <p>If you feel overwhelmed, don't worry. It's a lot of information all at once, but there are patterns that will help you learn and memorize the key signatures!</p>
+                    <table class="table is-hoverable">
+                        <thead>
+                            <tr>
+                                <th>Key <abbr title="Signature">Signature</abbr> </th>
+                                <th>Altered Notes</th>
+                                <th>Notation</th>
+                                <th>Piano Visual</th>
+                                <th>Relative Minor</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>C Major<br><br> (0 #'s/0 ♭'s)</td>
+                                <td>None</td>
+                                <td><figure class="image"><img src="./Images/KeySigs/None.png" alt=""></figure></td>
+                                <td><figure class="image"><img src="./Images/KeySigs/C_maj.png" alt=""></figure></td>
+                                <td>A Minor</td>
+                            </tr>
+                            <tr>
+                                <td>G Major<br><br>(1 #)</td>
+                                <td>F#</td>
+                                <td><figure class="image"><img src="./Images/KeySigs/1Sharp.png" alt=""></figure></td>
+                                <td><figure class="image"><img src="./Images/KeySigs/G_maj.png" alt=""></figure></td>
+                                <td>E Minor</td>
+                            </tr>
+                            <tr>
+                                <td>D Major<br><br>(2 #'s)</td>
+                                <td>F# C#</td>
+                                <td><figure class="image"><img src="./Images/KeySigs/2Sharp.png" alt=""></figure></td>
+                                <td><figure class="image"><img src="./Images/KeySigs/D_maj.png" alt=""></figure></td>
+                                <td>B Minor</td>
+                            </tr>
+                            <tr>
+                                <td>A Major<br><br>(3 #'s)</td>
+                                <td>F# C# G#</td>
+                                <td><figure class="image"><img src="./Images/KeySigs/3Sharp.png" alt=""></figure></td>
+                                <td><figure class="image"><img src="./Images/KeySigs/A_maj.png" alt=""></figure></td>
+                                <td>F# Minor</td>
+                            </tr>
+                            <tr>
+                                <td>E Major<br><br>(4 #'s)</td>
+                                <td>F# C# G# D#</td>
+                                <td><figure class="image"><img src="./Images/KeySigs/4Sharp.png" alt=""></figure></td>
+                                <td><figure class="image"><img src="./Images/KeySigs/E_maj.png" alt=""></figure></td>
+                                <td>C# Minor</td>
+                            </tr>
+                            <tr>
+                                <td>B Major<br><br>(5 #'s)</td>
+                                <td>F# C# G# D# A#</td>
+                                <td><figure class="image"><img src="./Images/KeySigs/5Sharp.png" alt=""></figure></td>
+                                <td><figure class="image"><img src="./Images/KeySigs/B_Cflat_maj.png" alt=""></figure></td>
+                                <td>G# Minor</td>
+                            </tr>
+                            <tr>
+                                <td>F# Major<br><br>(6 #'s)</td>
+                                <td>F# C# G# D# A# E#</td>
+                                <td><figure class="image"><img src="./Images/KeySigs/6Sharp.png" alt=""></figure></td>
+                                <td><figure class="image"><img src="./Images/KeySigs/Fsharp_Gflat_maj.png" alt=""></figure></td>
+                                <td>D# Minor</td>
+                            </tr>
+                            <tr>
+                                <td>C# Major<br><br>(7 #'s)</td>
+                                <td>F# C# G# D# A# E# B#</td>
+                                <td><figure class="image"><img src="./Images/KeySigs/7Sharp.png" alt=""></figure></td>
+                                <td><figure class="image"><img src="./Images/KeySigs/Csharp_Dflat_maj.png" alt=""></figure></td>
+                                <td>A# Minor</td>
+                            </tr>
+                            <tr>
+                                <td>F Major<br><br>(1 ♭)</td>
+                                <td>B♭</td>
+                                <td><figure class="image"><img src="./Images/KeySigs/1flat.png" alt=""></figure></td>
+                                <td><figure class="image"><img src="./Images/KeySigs/F_maj.png" alt=""></figure></td>
+                                <td>D Minor</td>
+                            </tr>
+                            <tr>
+                                <td>B♭ Major<br><br>(2 ♭'s)</td>
+                                <td>B♭ E♭</td>
+                                <td><figure class="image"><img src="./Images/KeySigs/2flat.png" alt=""></figure></td>
+                                <td><figure class="image"><img src="./Images/KeySigs/Bflat_maj.png" alt=""></figure></td>
+                                <td>G Minor</td>
+                            </tr>
+                            <tr>
+                                <td>E♭ Major<br><br>(3 ♭'s)</td>
+                                <td>B♭ E♭ A♭</td>
+                                <td><figure class="image"><img src="./Images/KeySigs/3flat.png" alt=""></figure></td>
+                                <td><figure class="image"><img src="./Images/KeySigs/Eflat_maj.png" alt=""></figure></td>
+                                <td>C Minor</td>
+                            </tr>
+                            <tr>
+                                <td>A♭ Major<br><br>(4 ♭'s)</td>
+                                <td>B♭ E♭ A♭ D♭</td>
+                                <td><figure class="image"><img src="./Images/KeySigs/4flat.png" alt=""></figure></td>
+                                <td><figure class="image"><img src="./Images/KeySigs/Aflat_maj.png" alt=""></figure></td>
+                                <td>F Minor</td>
+                            </tr>
+                            <tr>
+                                <td>D♭ Major<br><br>(5 ♭'s)</td>
+                                <td>B♭ E♭ A♭ D♭ G♭</td>
+                                <td><figure class="image"><img src="./Images/KeySigs/5flat.png" alt=""></figure></td>
+                                <td><figure class="image"><img src="./Images/KeySigs/Csharp_Dflat_maj.png" alt=""></figure></td>
+                                <td>B♭ Minor</td>
+                            </tr>
+                            <tr>
+                                <td>G♭ Major<br><br>(6 ♭'s)</td>
+                                <td>B♭ E♭ A♭ D♭ G♭ C♭</td>
+                                <td><figure class="image"><img src="./Images/KeySigs/6flat.png" alt=""></figure></td>
+                                <td><figure class="image"><img src="./Images/KeySigs/Fsharp_Gflat_maj.png" alt=""></figure></td>
+                                <td>E♭ Minor</td>
+                            </tr>
+                            <tr>
+                                <td>C♭ Major<br><br>(7 ♭'s)</td>
+                                <td>B♭ E♭ A♭ D♭ G♭ C♭ F♭</td>
+                                <td><figure class="image"><img src="./Images/KeySigs/7flat.png" alt=""></figure></td>
+                                <td><figure class="image"><img src="./Images/KeySigs/B_Cflat_maj.png" alt=""></figure></td>
+                                <td>A♭ Minor</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>*Notice the key of C major has no accidentals. On the piano, the key of C is all the white keys!</p>
+                    <p class="subtitle mt-3">Patterns to notice:</p>
+                        <p>
+                            <ul>
+                                <li>You add one sharp at a time in this order: F, C, G, D, A, E, B (Circle of Fifths)</li>
+                                <li>You add one flat at a time in this order: B, E, A, D, G, C, F (Circle of Fifths)</li>
+                                <li>To identify a sharp key signature notated on the staff, read the last sharp shown in the key signature, and raise it a half step. That is the major key! For example:
+                                    <figure>
+                                        <img class="image-sml" src="./Images/KeySigs/4sharp.png" alt="">
+                                    </figure>
+                                    The last sharp in this key signature is D#. If you raise that by a half-step, you get E! This is E major.
+                                </li>
+                                <li>To identify a flat key signature notated on the staff, read the second to last flat. That is the major key! For example:
+                                    <figure>
+                                        <img class="image-sml" src="./Images/KeySigs/4flat.png" alt="">
+                                    </figure>
+                                    The second to last flat in this key signature is A♭. This is A♭ major.
+                                    *note: this does not work for F major (1 flat), so you will have to remember that key signature separately!
+                                </li>
+                                <li>B Major sounds the same as C♭ Major, F# Major sounds the same as G♭ Major, and C# Major sounds the same as D♭ Major. That is because these pairs of notes are enharmonic. (To review, enharmonic describes a single note that is labeled with more than one name.)</li>
+                            </ul>
+                        </p>
+                </div>
+            </article>    
+        </div>
+    </div>
+    <div class="tile is-ancestor">
+        <div class="tile is-12 is-parent">
+            <article class="tile is-child notification is-info">
+                <div class="content">
+                    <h3 class="title">The Circle of Fifths</h3>
+                    <p class="subtitle">The circle of fifths is a pattern that will help you in nearly every aspect of music theory.</p>
+                    <p>
+                        <ul>
+                            <li>Going clockwise around the circle of fifths, the interval is a P5 between each section.</li>
+                            <li>Going counterclockwise around the circle of fifths, the interval is a P4 between each section.</li>
+                            <li>The outer ring is Major keys, and the inner ring is Minor keys. The Major keys are lined up with their relative minor.</li>
+                            <li>Starting at C, then going clockwise around the circle of fifths shows the order of the sharp keys. (C is 0 sharps, G is 1 sharp, D is 2 sharps, etc.)</li>
+                            <li>Starting at C, then going counterclockwise around the circle of fifths shows the order of the flat keys. (C is 0 flats, F is 1 flat, B♭ is 2 flats, etc.)</li>
+                        </ul>
+                    </p>
+                    <figure>
+                        <img src="./Images/circle_of_fifths.png" alt="">
+                    </figure>
+                    <p class="subtitle has-text-centered">We will be using this in later lessons, so be sure to get comfortable with it!</p>
+                </div>
+            </article>    
+        </div>
+    </div>
+    <h1 class="has-text-right"><a href="/Lesson4">Go to Lesson 4 →</a></h1>
+</section>
+
+<%- include("partials/footer") %>
