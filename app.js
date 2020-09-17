@@ -1,8 +1,15 @@
-var express = require("express");
-var app = express();
+const express = require("express");
+const app = express();
+const nodemailer = require('nodemailer');
+const bodyParser = require('body-parser');
 
+require('dotenv').config();
+
+app.use(bodyParser.urlencoded({extended:true}));
 app.use(express.static("public"));
 app.set("view engine", "ejs");
+
+//ROUTES
 
 app.get("/", function(req, res){
     res.render("home");
@@ -30,6 +37,34 @@ app.get("/Lesson3", function(req, res){
 
 app.get("/Contact", function(req, res){
     res.render("Contact");
+});
+
+app.post("/Contact", function(req, res){
+    const smtpTrans = nodemailer.createTransport({
+        host: "smtp.gmail.com",
+        port: process.env.EMAIL_PORT,
+        secure: process.env.EMAIL_SECURE,
+        auth: {
+            user: process.env.EMAIL,
+            pass: process.env.PASSWORD
+        }
+    });
+
+    const mailOpts = {
+        from: "person", //ignored by gmail
+        to: "marykatherinekerr@gmail.com",
+        subject: "Music Theory Website Email",
+        text: `${req.body.name} (${req.body.email}) says ${req.body.message}`
+    }
+
+    smtpTrans.sendMail(mailOpts, function(err) {
+        console.log(err);
+        if(err) {
+            res.render("Lesson0");
+        } else {
+            res.render("home");
+        }
+    });
 });
 
 app.get("/Sources", function(req, res){
