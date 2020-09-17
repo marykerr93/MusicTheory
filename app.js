@@ -42,8 +42,8 @@ app.get("/Contact", function(req, res){
 app.post("/Contact", function(req, res){
     const smtpTrans = nodemailer.createTransport({
         host: "smtp.gmail.com",
-        port: process.env.EMAIL_PORT,
-        secure: process.env.EMAIL_SECURE,
+        port: 587,
+        secure: false,
         auth: {
             user: process.env.EMAIL,
             pass: process.env.PASSWORD
@@ -60,7 +60,7 @@ app.post("/Contact", function(req, res){
     smtpTrans.sendMail(mailOpts, function(err) {
         console.log(err);
         if(err) {
-            res.render("Lesson0");
+            res.render("contact");
         } else {
             res.render("home");
         }

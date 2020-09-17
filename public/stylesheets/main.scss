@@ -23,6 +23,9 @@ a {
 }
 
 .bg-img {
-    background-image: url("https://images.unsplash.com/photo-1538402074774-8e624f3f7e5d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=975&q=80");
-    opacity: .5;
+    background-image: url("../Images/pianoBG.png");
+}
+
+.bg-img * {
+    opacity: 1;
 }
