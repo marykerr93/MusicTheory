@@ -16,6 +16,7 @@
   },
   "scripts": {
     "start": "npm run css-build && node app.js",
+    "build": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "css-build": "node-sass --omit-source-map-url public/stylesheets/styles.scss public/stylesheets/styles.css",
     "css-watch": "npm run css-build -- --watch"

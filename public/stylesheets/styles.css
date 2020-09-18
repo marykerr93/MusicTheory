@@ -9586,5 +9586,12 @@ a {
 .bg-img {
   background-image: url("../Images/pianoBG.png"); }
 
-.bg-img * {
-  opacity: 1; }
+.sticky {
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  z-index: 30; }
+
+.website {
+  display: none; }

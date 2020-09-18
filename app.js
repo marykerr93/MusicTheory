@@ -50,21 +50,26 @@ app.post("/Contact", function(req, res){
         }
     });
 
-    const mailOpts = {
-        from: "person", //ignored by gmail
-        to: "marykatherinekerr@gmail.com",
-        subject: "Music Theory Website Email",
-        text: `${req.body.name} (${req.body.email}) says ${req.body.message}`
-    }
+    if((req.body.website).length != 0) {
+        res.render("home");
+    } else {
 
-    smtpTrans.sendMail(mailOpts, function(err) {
-        console.log(err);
-        if(err) {
-            res.render("contact");
-        } else {
-            res.render("home");
+        const mailOpts = {
+            from: "person", //ignored by gmail
+            to: "marykatherinekerr@gmail.com",
+            subject: "Music Theory Website Email",
+            text: `${req.body.name} (${req.body.email}) says ${req.body.message}`
         }
-    });
+
+        smtpTrans.sendMail(mailOpts, function(err) {
+            console.log(err);
+            if(err) {
+                res.render("contact");
+            } else {
+                res.render("home");
+            }
+        });
+    }
 });
 
 app.get("/Sources", function(req, res){
