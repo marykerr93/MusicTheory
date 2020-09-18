@@ -42,7 +42,7 @@ app.get("/Contact", function (req, res) {
 app.post("/Contact", function (req, res) {
     const smtpTrans = nodemailer.createTransport({
         host: "smtp.gmail.com",
-        port: 587,
+        port: 3000,
         secure: false,
         auth: {
             user: process.env.EMAIL,
@@ -80,7 +80,7 @@ app.get("*", function (req, res) {
     res.render("ComingSoon");
 });
 
-app.listen(process.env.PORT || 3000, function () {
+app.listen(process.env.PORT || 80, function () {
     console.log("Server is running!");
 });
 
